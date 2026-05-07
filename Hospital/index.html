@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CityCare</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Your Health Is Our Priority</h1>
+        <p>Providing world class medical expertise with a compassionate touch.</p>
+        <a href="#appointment" class="btn">Book Now</a>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Our Specialized Services</h2>
+        <div class="service-grid">
+            <div class="card">
+                <h3>Cardiology</h3>
+                <p>Advanced heart care and diagnostic testing.</p>
+            </div>
+            <div class="card">
+                <h3>Pediatrics</h3>
+                <p>Specialized medical care for children and infants.</p>
+            </div>
+            <div class="card">
+                <h3>Neurology</h3>
+                <p>Expert treatment for brain and nervous system disorders.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="appointment">
+        <h2>Schedule an Appointment</h2>
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <select id="service" required>
+                <option value="">Select Service</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="neurology">Neurology</option>
+            </select>
+            <input type="date" id="date" required>
+            <button type="submit">Confirm Appointment</button>
+        </form>
+        <div id="message"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
